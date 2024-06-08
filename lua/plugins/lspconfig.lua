@@ -1,7 +1,6 @@
 return {
   'neovim/nvim-lspconfig',
   dependencies = {
-
     { 'williamboman/mason.nvim', config = true },
     'williamboman/mason-lspconfig.nvim',
     'WhoIsSethDaniel/mason-tool-installer.nvim',
@@ -83,6 +82,7 @@ return {
           },
         },
       },
+      tsserver = {},
     }
 
     require('mason').setup()
@@ -90,6 +90,8 @@ return {
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
       'stylua',
+      'prettierd',
+      'eslint_d',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
