@@ -83,6 +83,7 @@ return {
         },
       },
       tsserver = {},
+      gopls = {},
     }
 
     require('mason').setup()
@@ -93,6 +94,7 @@ return {
       'prettierd',
       'eslint_d',
       'markdownlint',
+      'golangci-lint',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

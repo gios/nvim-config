@@ -197,6 +197,7 @@ return {
         markdown = { 'markdownlint' },
         javascript = { 'eslint_d' },
         typescript = { 'eslint_d' },
+        go = { 'golangcilint' },
       }
 
       local eslint = lint.linters.eslint_d
