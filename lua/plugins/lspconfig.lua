@@ -84,6 +84,7 @@ return {
       },
       tsserver = {},
       gopls = {},
+      rust_analyzer = {},
     }
 
     require('mason').setup()
@@ -95,6 +96,7 @@ return {
       'eslint_d',
       'markdownlint',
       'golangci-lint',
+      'goimports',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
