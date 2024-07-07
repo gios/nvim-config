@@ -97,6 +97,7 @@ return {
       'markdownlint',
       'golangci-lint',
       'goimports',
+      'rustfmt',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

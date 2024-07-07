@@ -65,6 +65,7 @@ return {
         javascript = { 'prettierd' },
         typescript = { 'prettierd' },
         go = { 'goimports' },
+        rust = { 'rustfmt' },
       },
     },
   },
